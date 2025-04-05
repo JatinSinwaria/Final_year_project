@@ -219,6 +219,77 @@ header {
   align-items: center;
 }
 
+.about-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #2d2d2d;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(145deg, #f9f9f9, #ffffff);
+  border-left: 5px solid #00a676;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 166, 118, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-text:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 166, 118, 0.15);
+}
+
+.about-text .headline {
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: #00a676;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.about-text .accent {
+  color: #00796b;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.about-text .accent::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: #00796b;
+  transition: width 0.3s ease-in-out;
+}
+
+.about-text .accent:hover::after {
+  width: 100%;
+}
+
+.about-text .highlight {
+  color: #388e3c;
+  font-weight: 600;
+  background-color: #e8f5e9;
+  padding: 2px 6px;
+  border-radius: 5px;
+}
+
+.about-text .focus {
+  font-weight: 700;
+  color: #004d40;
+  background: linear-gradient(to right, #b2f0e3, #e0f7f4);
+  padding: 2px 8px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.05);
+  transition: background 0.4s ease;
+}
+
+.about-text .focus:hover {
+  background: linear-gradient(to right, #a2e4d4, #c4f5ed);
+}
+
 .line {
   font-size: 72px;
   font-family: "Italiana", sans-serif;
@@ -396,6 +467,9 @@ input[type="file"] {
   height: 100%;
   object-fit: cover;
   border-radius: inherit;
+}
+.indi-member img {
+  object-position: bottom right;
 }
 
 .cover-box {
